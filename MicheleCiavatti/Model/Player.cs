@@ -1,5 +1,5 @@
-﻿namespace Model {
-
+﻿namespace Model 
+{
     ///This class is a translation of PlayerImpl in the main project
     public class Player {
 
@@ -10,7 +10,8 @@
         }
 
         public static void Main() {
-            Console.WriteLine("Hello");
+            Resource r = Resource.Water;
+            Console.WriteLine(r.getSimpleBuilding());
         }
     }
 }
