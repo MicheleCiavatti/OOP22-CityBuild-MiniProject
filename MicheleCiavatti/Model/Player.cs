@@ -19,16 +19,28 @@ namespace Model
         public bool SpendResources(Dictionary<Resource, int> toSpend)
         {
             var input = new Dictionary<Resource, int>(toSpend);
-            foreach (Resource res in input.Keys)
-            {
-                input[res] = Math.Abs(input[res]) * -1;
-            }
+            Normalize(input, false);
             if (CheckResourcesToSpend(input))
             {
                 SetResources(input, toSpend.Count() == 1 && toSpend.ContainsKey(Resource.Citizen));
                 return true;
             }
             return false;
+        }
+
+        private void Normalize(Dictionary<Resource, int> map, bool positive)
+        {
+            foreach (Resource res in map.Keys)
+            {
+                map[res] = Math.Abs(map[res]) * (positive ? 1 : -1);
+            }
+        }
+
+        public void AddResources(Dictionary<Resource, int> toAdd)
+        {
+            Dictionary<Resource, int> input = new Dictionary<Resource, int>(toAdd);
+            Normalize(input, true);
+            SetResources(input, true);
         }
 
         private bool CheckResourcesToSpend(Dictionary<Resource, int> toSpend)
@@ -46,7 +58,7 @@ namespace Model
 
         private void SetResources(Dictionary<Resource, int> map, bool addCitizens)
         {
-            if (!addCitizens && map.ContainsKey(Resource.Citizen))
+            if (!addCitizens)
             {
                 map.Remove(Resource.Citizen);
             }
