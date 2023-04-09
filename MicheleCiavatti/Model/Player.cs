@@ -67,18 +67,5 @@ namespace Model
                 Resources[res] += map[res];
             }
         }
-
-        public static void Main() {
-            Resource r = Resource.Water;
-            Player p = new Player();
-            Console.WriteLine(r.getSimpleBuilding());
-            var copy = p.Resources;
-            var input = new Dictionary<Resource, int>(copy);
-            copy.Remove(Resource.Water);
-            foreach (var i in input) 
-            {
-                Console.WriteLine(i);
-            }
-        }
     }
 }
