@@ -7,7 +7,7 @@ public interface Fire {
      * 
      * @throws ArgumentException if the calculation fails.
      */
-    //public int calculateIntensity() throws ArgumentException;
+    int calculateIntensity() throws ArgumentException;
 
     /**
      * Sets the cost of the fire based on the number of citizens and water resources
