@@ -1,6 +1,4 @@
-//classe
 public class FireImpl{
-    //set cost
     public void setCost() { 
         this.citizen = city.getCitizens(); 
         int water = this.getNumResource(Resource.WATER); 
