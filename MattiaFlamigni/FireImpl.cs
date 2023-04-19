@@ -73,9 +73,6 @@ namespace FireNamespace
                 .ForEach(building => city.demolish(building));
         }
 
-        /**
-         * {@inheritDoc}
-         */
         public void performFireAction()
         {
             this.setCost();
