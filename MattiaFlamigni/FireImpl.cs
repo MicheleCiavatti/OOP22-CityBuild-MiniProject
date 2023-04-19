@@ -7,9 +7,6 @@ namespace FireNamespace
     using PlayerNamespace = it.unibo.model.api.Player;
     using ResourceNamespace = it.unibo.model.api.Resource;
 
-    /**
-     * A class representing a Fire object that implements the Fire interface.
-     */
     public class FireImpl : FireNamespace
     {
         public const int ARBITRARY_VALUE = 5;
@@ -26,9 +23,6 @@ namespace FireNamespace
             this.player = city.getPlayer();
         }
 
-        /**
-         * {@inheritDoc}
-         */
         public void setCost()
         {
             this.citizen = city.getCitizens();
@@ -42,17 +36,12 @@ namespace FireNamespace
             return (citizen / 2) * (ARBITRARY_VALUE - water / 2) * ARBITRARY_VALUE;
         }
 
-        /**
-         * {@inheritDoc}
-         */
+
         public int getCost()
         {
             return cost;
         }
 
-        /**
-         * {@inheritDoc}
-         */
         public void spendGold()
         {
             System.Console.WriteLine("COSTO" + cost);
