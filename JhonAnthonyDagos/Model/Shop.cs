@@ -1,11 +1,11 @@
-//This class is the implementation of the interface Shop from the main project
 using System.Collections.Generic;
-using MyNameSpace;
+using Controller;
 using System;
 
 namespace ShopModel
 {
 
+    //This class is the implementation of the interface Shop from the main project
     public class Shop
     {
         private string[] _resourceStringList = {"Water", "Wood", "Energy", "Metal", "Citizen"};
@@ -15,11 +15,6 @@ namespace ShopModel
         private int _randomPrice;
         private Dictionary<Resource, int> _resource = new Dictionary<Resource, int>();
         private Dictionary<Resource, int> _costResource = new Dictionary<Resource, int>();
-
-        //Using the auto-implemented properties to add variables
-        public bool _okButton { get; private set; }
-        public bool _noButton { get; private set; }
-        public bool _visibility { get; set; }
 
         private Controller _controller = new Controller();
 
@@ -74,15 +69,6 @@ namespace ShopModel
 
             System.Console.WriteLine("Shop Menu");
             System.Console.WriteLine(generateResource());
-        }
-
-
-        private void turnButtonFalse()
-        {
-            _okButton = false;
-            _noButton = false;
-            System.Console.WriteLine("Ok button: " + _okButton);
-            System.Console.WriteLine("No button: " + _noButton);
         }
 
         //This method is used to add the resource generated to a field
