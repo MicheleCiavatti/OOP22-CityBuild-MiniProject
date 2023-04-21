@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "No4Sk759iAtrn5S4pkl7Pd1BSGqjotPHevFcNyqkgqXfOKKyo49bJiQydDN8BLHf2DeN7P7VhsMObsg7arqjWg==",
+  "dgSpecHash": "zzMeTf7Qgh8DmOb+z+PiJ7sLFMzMYDQOIGGT+BegNG4eZwbc++yu9fXsKTdgXs6+ZubS6C/KBwQYk9jKH0woeQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\miche\\OneDrive\\Desktop\\OOP miniprogetto\\OOP22-CityBuild-MiniProject\\MicheleCiavatti\\MicheleCiavatti.csproj",
+  "projectFilePath": "C:\\Users\\miche\\OneDrive\\Desktop\\OOP miniprogetto\\OOP22-CityBuild-MiniProject\\MicheleCiavatti\\MicheleCiavatti.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\miche\\.nuget\\packages\\microsoft.codecoverage\\17.6.0-preview-20230223-05\\microsoft.codecoverage.17.6.0-preview-20230223-05.nupkg.sha512",
     "C:\\Users\\miche\\.nuget\\packages\\microsoft.net.test.sdk\\17.6.0-preview-20230223-05\\microsoft.net.test.sdk.17.6.0-preview-20230223-05.nupkg.sha512",

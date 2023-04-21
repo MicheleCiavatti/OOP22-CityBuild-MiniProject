@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\miche\\OneDrive\\Desktop\\OOP miniprogetto\\OOP22-CityBuild-MiniProject\\MicheleCiavatti\\MicheleCiavatti.csproj": {}
+    "C:\\Users\\miche\\OneDrive\\Desktop\\OOP miniprogetto\\OOP22-CityBuild-MiniProject\\MicheleCiavatti\\MicheleCiavatti.csproj": {}
   },
   "projects": {
-    "c:\\Users\\miche\\OneDrive\\Desktop\\OOP miniprogetto\\OOP22-CityBuild-MiniProject\\MicheleCiavatti\\MicheleCiavatti.csproj": {
+    "C:\\Users\\miche\\OneDrive\\Desktop\\OOP miniprogetto\\OOP22-CityBuild-MiniProject\\MicheleCiavatti\\MicheleCiavatti.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\miche\\OneDrive\\Desktop\\OOP miniprogetto\\OOP22-CityBuild-MiniProject\\MicheleCiavatti\\MicheleCiavatti.csproj",
+        "projectUniqueName": "C:\\Users\\miche\\OneDrive\\Desktop\\OOP miniprogetto\\OOP22-CityBuild-MiniProject\\MicheleCiavatti\\MicheleCiavatti.csproj",
         "projectName": "MicheleCiavatti",
-        "projectPath": "c:\\Users\\miche\\OneDrive\\Desktop\\OOP miniprogetto\\OOP22-CityBuild-MiniProject\\MicheleCiavatti\\MicheleCiavatti.csproj",
+        "projectPath": "C:\\Users\\miche\\OneDrive\\Desktop\\OOP miniprogetto\\OOP22-CityBuild-MiniProject\\MicheleCiavatti\\MicheleCiavatti.csproj",
         "packagesPath": "C:\\Users\\miche\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\miche\\OneDrive\\Desktop\\OOP miniprogetto\\OOP22-CityBuild-MiniProject\\MicheleCiavatti\\obj\\",
+        "outputPath": "C:\\Users\\miche\\OneDrive\\Desktop\\OOP miniprogetto\\OOP22-CityBuild-MiniProject\\MicheleCiavatti\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\miche\\AppData\\Roaming\\NuGet\\NuGet.Config"
