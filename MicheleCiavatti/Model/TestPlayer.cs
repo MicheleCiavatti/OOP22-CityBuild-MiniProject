@@ -17,5 +17,15 @@ namespace Model
             foreach (Resource r in resources)
                 Assert.Contains(r, keys);
         }
+
+        [Fact]
+        public void TestAddingResources()
+        {
+            var p = new Player();
+            var toAdd = new Dictionary<Resource, int>();
+            toAdd.Add(Resource.Energy, 10);
+            p.AddResources(toAdd);
+            Assert.Equal(toAdd.GetValueOrDefault(Resource.Energy), p.GetResource(Resource.Energy));
+        }
     }
 }
