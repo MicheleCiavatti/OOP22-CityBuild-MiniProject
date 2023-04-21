@@ -1,0 +1,15 @@
+/Users/anthonydagos/Documents/IngegneriaEScienzeInformatiche/SecondoAnno/PROGRAMMAZZIONE AD OGGETTI/OOP-MiniProject/OOP22-CityBuild-MiniProject/JhonAnthonyDagos/bin/Debug/net7.0/JhonAnthonyDagos
+/Users/anthonydagos/Documents/IngegneriaEScienzeInformatiche/SecondoAnno/PROGRAMMAZZIONE AD OGGETTI/OOP-MiniProject/OOP22-CityBuild-MiniProject/JhonAnthonyDagos/bin/Debug/net7.0/JhonAnthonyDagos.deps.json
+/Users/anthonydagos/Documents/IngegneriaEScienzeInformatiche/SecondoAnno/PROGRAMMAZZIONE AD OGGETTI/OOP-MiniProject/OOP22-CityBuild-MiniProject/JhonAnthonyDagos/bin/Debug/net7.0/JhonAnthonyDagos.runtimeconfig.json
+/Users/anthonydagos/Documents/IngegneriaEScienzeInformatiche/SecondoAnno/PROGRAMMAZZIONE AD OGGETTI/OOP-MiniProject/OOP22-CityBuild-MiniProject/JhonAnthonyDagos/bin/Debug/net7.0/JhonAnthonyDagos.dll
+/Users/anthonydagos/Documents/IngegneriaEScienzeInformatiche/SecondoAnno/PROGRAMMAZZIONE AD OGGETTI/OOP-MiniProject/OOP22-CityBuild-MiniProject/JhonAnthonyDagos/bin/Debug/net7.0/JhonAnthonyDagos.pdb
+/Users/anthonydagos/Documents/IngegneriaEScienzeInformatiche/SecondoAnno/PROGRAMMAZZIONE AD OGGETTI/OOP-MiniProject/OOP22-CityBuild-MiniProject/JhonAnthonyDagos/obj/Debug/net7.0/JhonAnthonyDagos.csproj.AssemblyReference.cache
+/Users/anthonydagos/Documents/IngegneriaEScienzeInformatiche/SecondoAnno/PROGRAMMAZZIONE AD OGGETTI/OOP-MiniProject/OOP22-CityBuild-MiniProject/JhonAnthonyDagos/obj/Debug/net7.0/JhonAnthonyDagos.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anthonydagos/Documents/IngegneriaEScienzeInformatiche/SecondoAnno/PROGRAMMAZZIONE AD OGGETTI/OOP-MiniProject/OOP22-CityBuild-MiniProject/JhonAnthonyDagos/obj/Debug/net7.0/JhonAnthonyDagos.AssemblyInfoInputs.cache
+/Users/anthonydagos/Documents/IngegneriaEScienzeInformatiche/SecondoAnno/PROGRAMMAZZIONE AD OGGETTI/OOP-MiniProject/OOP22-CityBuild-MiniProject/JhonAnthonyDagos/obj/Debug/net7.0/JhonAnthonyDagos.AssemblyInfo.cs
+/Users/anthonydagos/Documents/IngegneriaEScienzeInformatiche/SecondoAnno/PROGRAMMAZZIONE AD OGGETTI/OOP-MiniProject/OOP22-CityBuild-MiniProject/JhonAnthonyDagos/obj/Debug/net7.0/JhonAnthonyDagos.csproj.CoreCompileInputs.cache
+/Users/anthonydagos/Documents/IngegneriaEScienzeInformatiche/SecondoAnno/PROGRAMMAZZIONE AD OGGETTI/OOP-MiniProject/OOP22-CityBuild-MiniProject/JhonAnthonyDagos/obj/Debug/net7.0/JhonAnthonyDagos.dll
+/Users/anthonydagos/Documents/IngegneriaEScienzeInformatiche/SecondoAnno/PROGRAMMAZZIONE AD OGGETTI/OOP-MiniProject/OOP22-CityBuild-MiniProject/JhonAnthonyDagos/obj/Debug/net7.0/refint/JhonAnthonyDagos.dll
+/Users/anthonydagos/Documents/IngegneriaEScienzeInformatiche/SecondoAnno/PROGRAMMAZZIONE AD OGGETTI/OOP-MiniProject/OOP22-CityBuild-MiniProject/JhonAnthonyDagos/obj/Debug/net7.0/JhonAnthonyDagos.pdb
+/Users/anthonydagos/Documents/IngegneriaEScienzeInformatiche/SecondoAnno/PROGRAMMAZZIONE AD OGGETTI/OOP-MiniProject/OOP22-CityBuild-MiniProject/JhonAnthonyDagos/obj/Debug/net7.0/JhonAnthonyDagos.genruntimeconfig.cache
+/Users/anthonydagos/Documents/IngegneriaEScienzeInformatiche/SecondoAnno/PROGRAMMAZZIONE AD OGGETTI/OOP-MiniProject/OOP22-CityBuild-MiniProject/JhonAnthonyDagos/obj/Debug/net7.0/ref/JhonAnthonyDagos.dll
