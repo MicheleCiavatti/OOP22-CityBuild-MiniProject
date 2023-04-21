@@ -1,7 +1,6 @@
-/** This namespace is used to 
+/** This namespace is used to implement the Controller's model 
 */
-
-namespace MyNameSpace
+namespace Controller
 {
 
 
@@ -20,7 +19,7 @@ namespace MyNameSpace
 
         public void addResource(Dictionary<Resource, int> resource){
             System.Console.WriteLine("Setting resource of the player");
-            // Aggiunge i valori di resource2 ai valori corrispondenti di resource1, se la stessa chiave è presente in entrambi i dizionari
+            // This method adds the values from resource2 to the corresponding values in resource1, if the same key is present in both dictionaries
             foreach (var key in resource.Keys)
             {
                 if (resources.ContainsKey(key))
@@ -29,7 +28,7 @@ namespace MyNameSpace
                 }
             }
 
-            // Aggiunge tutte le coppie chiave-valore di resource2 a resource1 che non sono già presenti in resource1
+            // This method adds all the key-value pairs from resource2 to resource1 that are not already present in resource1
             foreach (var entry in resource)
             {
                 if (!resources.ContainsKey(entry.Key))
@@ -39,6 +38,7 @@ namespace MyNameSpace
             }
         }
 
+        //The method subtracts the specified quantities of resources from the resources dictionary of the player, if they exist
         public void spendResource(Dictionary<Resource,int> r)
         {
             foreach(KeyValuePair<Resource,int> entry in r) 
@@ -60,7 +60,6 @@ namespace MyNameSpace
             foreach(Resource key in resources.Keys)
             {
                 System.Console.WriteLine("Key: {0}, Value: {1}",key,resources[key]);
-                
             }
         }
 
