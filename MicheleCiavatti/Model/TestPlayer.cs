@@ -8,7 +8,8 @@ namespace Model
         [Fact]
         public void TestCreation()
         {
-
+            var p = new Player();
+            Assert.NotNull(p);
         }
     }
 }
