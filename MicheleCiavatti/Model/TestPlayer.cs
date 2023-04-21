@@ -27,5 +27,18 @@ namespace Model
             p.AddResources(toAdd);
             Assert.Equal(toAdd.GetValueOrDefault(Resource.Energy), p.GetResource(Resource.Energy));
         }
+
+        [Fact]
+        public void TestSpendingResources()
+        {
+            var p = new Player();
+            var toAdd = new Dictionary<Resource, int>();
+            toAdd.Add(Resource.Energy, 10);
+            p.AddResources(toAdd);
+            p.SpendResources(toAdd);
+            Assert.Equal(0, p.GetResource(Resource.Energy));
+            p.SpendResources(toAdd);
+            Assert.Equal(0, p.GetResource(Resource.Energy));
+        }
     }
 }
