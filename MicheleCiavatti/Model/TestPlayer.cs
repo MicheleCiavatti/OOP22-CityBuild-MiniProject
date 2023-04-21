@@ -15,7 +15,7 @@ namespace Model
             var keys = p.Resources.Keys;
             var resources = Enum.GetValues(typeof(Resource));
             foreach (Resource r in resources)
-                Assert.True(keys.Contains(r));
+                Assert.Contains(r, keys);
         }
     }
 }
