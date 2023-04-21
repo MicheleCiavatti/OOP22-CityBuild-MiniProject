@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\miche\\OOP22-CityBuild-C#\\MicheleCiavatti\\MicheleCiavatti.csproj": {}
+    "c:\\Users\\miche\\OneDrive\\Desktop\\OOP miniprogetto\\OOP22-CityBuild-MiniProject\\MicheleCiavatti\\MicheleCiavatti.csproj": {}
   },
   "projects": {
-    "C:\\Users\\miche\\OOP22-CityBuild-C#\\MicheleCiavatti\\MicheleCiavatti.csproj": {
+    "c:\\Users\\miche\\OneDrive\\Desktop\\OOP miniprogetto\\OOP22-CityBuild-MiniProject\\MicheleCiavatti\\MicheleCiavatti.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\miche\\OOP22-CityBuild-C#\\MicheleCiavatti\\MicheleCiavatti.csproj",
+        "projectUniqueName": "c:\\Users\\miche\\OneDrive\\Desktop\\OOP miniprogetto\\OOP22-CityBuild-MiniProject\\MicheleCiavatti\\MicheleCiavatti.csproj",
         "projectName": "MicheleCiavatti",
-        "projectPath": "C:\\Users\\miche\\OOP22-CityBuild-C#\\MicheleCiavatti\\MicheleCiavatti.csproj",
+        "projectPath": "c:\\Users\\miche\\OneDrive\\Desktop\\OOP miniprogetto\\OOP22-CityBuild-MiniProject\\MicheleCiavatti\\MicheleCiavatti.csproj",
         "packagesPath": "C:\\Users\\miche\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\miche\\OOP22-CityBuild-C#\\MicheleCiavatti\\obj\\",
+        "outputPath": "c:\\Users\\miche\\OneDrive\\Desktop\\OOP miniprogetto\\OOP22-CityBuild-MiniProject\\MicheleCiavatti\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\miche\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,6 +37,20 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.6.0-preview-20230223-05, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -53,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.407\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     }
