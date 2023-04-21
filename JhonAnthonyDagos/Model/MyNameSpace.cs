@@ -1,32 +1,14 @@
 /** This namespace is used to 
 */
 
-using System.Windows.Forms;
-
-namespace Interfaces
+namespace MyNameSpace
 {
+
+
 
     public enum Resource{
         Water = 0, Wood = 1, Energy = 2, Metal = 3, Citizen = 4, Gold = 5
     }
-
-    public class Dialog {
-        private string name;
-        public string text {get; set;}
-        public Dialog(){
-            text = new String("");
-            this.name = "New";
-        }
-        public Dialog(string name) {
-            text = new String("");
-            this.name = name;
-        }
-
-        public void setText(String text){
-            this.text = text;
-        }
-    }
-
     public class Controller
     {
         private Dictionary<Resource, int> resources = new Dictionary<Resource, int>();
@@ -35,11 +17,13 @@ namespace Interfaces
             resources.Add(Resource.Gold, 50);
         }
 
+
         public void addResource(Dictionary<Resource, int> resource){
+            System.Console.WriteLine("Setting resource of the player");
             // Aggiunge i valori di resource2 ai valori corrispondenti di resource1, se la stessa chiave è presente in entrambi i dizionari
             foreach (var key in resource.Keys)
             {
-                if (resource.ContainsKey(key))
+                if (resources.ContainsKey(key))
                 {
                     resources[key] += resource[key];
                 }
@@ -55,18 +39,31 @@ namespace Interfaces
             }
         }
 
+        public void spendResource(Dictionary<Resource,int> r)
+        {
+            foreach(KeyValuePair<Resource,int> entry in r) 
+            {
+                if(resources.ContainsKey(entry.Key))
+                {
+                    resources[entry.Key] -= entry.Value;
+                }
+            }
+        }
+
         public Dictionary<Resource, int> getPlayerResource(){
             return resources;
         }
 
-    }
-
-
-
-    public class Player{
-        public void addResources() {
-            System.Console.WriteLine("Added Resources");
+        
+        public void printResource()
+        {
+            foreach(Resource key in resources.Keys)
+            {
+                System.Console.WriteLine("Key: {0}, Value: {1}",key,resources[key]);
+                
+            }
         }
+
     }
 
 }
