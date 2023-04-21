@@ -4,7 +4,7 @@ using MyNameSpace;
 
 namespace Test
 {
-    class Program
+    class TestShop
     {
         static void Main(string[] args)
         {
