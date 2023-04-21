@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 is_global = true
 build_property.TargetFramework = net6.0
 build_property.TargetPlatformMinVersion = 
@@ -9,16 +8,3 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MicheleCiavatti
 build_property.ProjectDir = c:\Users\miche\OneDrive\Desktop\OOP miniprogetto\OOP22-CityBuild-MiniProject\MicheleCiavatti\
-=======
-is_global = true
-build_property.TargetFramework = net6.0
-build_property.TargetPlatformMinVersion = 
-build_property.UsingMicrosoftNETSdkWeb = 
-build_property.ProjectTypeGuids = 
-build_property.InvariantGlobalization = 
-build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
-build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = MicheleCiavatti
-build_property.ProjectDir = /Users/anthonydagos/Documents/IngegneriaEScienzeInformatiche/SecondoAnno/PROGRAMMAZZIONE AD OGGETTI/OOP-MiniProject/OOP22-CityBuild-MiniProject/MicheleCiavatti/
->>>>>>> 8dcc3638ca4f4ba24b5a567b5ebc3b6e379018a0

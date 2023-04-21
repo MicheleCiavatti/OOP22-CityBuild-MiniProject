@@ -1,8 +1,7 @@
 .vscode
 
-<<<<<<< HEAD
-./obj
-
+./MicheleCiavatti/obj
+.
 # User-specific files
 *.suo
 *.user
@@ -138,5 +137,3 @@ vscode/*
 
 obj/
 .fake
-=======
->>>>>>> 8dcc3638ca4f4ba24b5a567b5ebc3b6e379018a0
