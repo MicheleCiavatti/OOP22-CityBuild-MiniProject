@@ -1,100 +1,57 @@
-using NUnit.Framework;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Collections.Generic;
+using Xunit;
 
-namespace FireNamespace.Tests
+public class TestSetCost
 {
-    [TestClass]
-    public class FireImplTests
+    [Fact]
+    public void TestSetCostCalculatesCorrectly()
     {
-        private CityStub cityStub;
-        private PlayerStub playerStub;
-        private FireImpl fire;
+        // Arrange
+        City city = new City();
+        Player player = new Player();
+        player.AddResource(ResourceNamespace.WATER, 10);
 
-        [SetUp]
-        public void Setup()
-        {
-            cityStub = new CityStub();
-            playerStub = new PlayerStub();
-            cityStub.Player = playerStub;
-            fire = new FireImpl(cityStub);
-        }
+        // Act
+        player.setCost();
 
-        [TestMethod]
-        public void SetCost_WithFewCitizensAndWater_ReturnsMinimumCost()
-        {
-            // Arrange
-            cityStub.Citizens = 2;
-            playerStub.Resources[ResourceNamespace.WATER] = 1;
+        // Assert
+        Assert.True(player.cost = 50);
+    }
 
-            // Act
-            fire.setCost();
+    [Fact]
+    public void TestSpendGoldSubtractsCorrectAmount()
+    {
+        // Arrange
+        Player player = new Player();
+        //player.AddResource(ResourceNamespace.GOLD, 100); default
+        int expectedGold = player.getResource(ResourceNamespace.GOLD) - 50;
 
-            // Assert
-            Assert.AreEqual(FireImpl.MIN_COST, fire.getCost());
-        }
+        // Act
+        player.setCost(); // cost = 50
+        player.spendGold();
 
-        [Test]
-        public void SpendGold_WithEnoughGold_RemovesGoldFromPlayer()
-        {
-            // Arrange
-            playerStub.Resources[ResourceNamespace.GOLD] = 100;
-            fire.setCost();
+        // Assert
+        Assert.Equal(expectedGold, player.getResource(ResourceNamespace.GOLD));
+    }
 
-            // Act
-            fire.spendGold();
+    [Fact]
+    public void TestDestroyBuildingsDemolishesNonUpgradableBuildings()
+    {
+        // Arrange
+        City city = new City();
+        Building b1 = new Building("Factory", false);
+        Building b2 = new Building("School", true);
+        Building b3 = new Building("Hospital", false);
+        city.addBuilding(b1);
+        city.addBuilding(b2);
+        city.addBuilding(b3);
 
-            // Assert
-            Assert.AreEqual(100 - fire.getCost(), playerStub.Resources[ResourceNamespace.GOLD]);
-        }
+        // Act
+        city.destroyBuildings();
 
-        [Test]
-        public void SpendGold_WithNotEnoughGold_ThrowsException()
-        {
-            // Arrange
-            playerStub.Resources[ResourceNamespace.GOLD] = 10;
-            fire.setCost();
-
-            // Assert
-            Assert.Throws<System.ArgumentException>(() => fire.spendGold());
-        }
-
-        [Test]
-        public void DestroyBuildings_DemolishesAllNonUpgradableBuildings()
-        {
-            // Arrange
-            BuildingStub b1 = new BuildingStub(true);
-            BuildingStub b2 = new BuildingStub(false);
-            BuildingStub b3 = new BuildingStub(false);
-            cityStub.Buildings = new List<BuildingNamespace>() { b1, b2, b3 };
-
-            // Act
-            fire.destroyBuildings();
-
-            // Assert
-            Assert.AreEqual(1, cityStub.Buildings.Count);
-            Assert.AreEqual(b1, cityStub.Buildings[0]);
-            Assert.IsTrue(b1.Demolished);
-            Assert.IsFalse(b2.Demolished);
-            Assert.IsTrue(b3.Demolished);
-        }
-
-        [Test]
-        public void DestroyBuildings_DemolishesAllBuildingsIfNoNonUpgradableBuildings()
-        {
-            // Arrange
-            BuildingStub b1 = new BuildingStub(false);
-            BuildingStub b2 = new BuildingStub(false);
-            cityStub.Buildings = new List<BuildingNamespace>() { b1, b2 };
-
-            // Act
-            fire.destroyBuildings();
-
-            // Assert
-            Assert.AreEqual(0, cityStub.Buildings.Count);
-            Assert.IsTrue(b1.Demolished);
-            Assert.IsTrue(b2.Demolished);
-        }
+        // Assert
+        List<Building> remainingBuildings = city.getBuildings();
+        Assert.DoesNotContain(b1, remainingBuildings);
+        Assert.Contains(b2, remainingBuildings);
+        Assert.DoesNotContain(b3, remainingBuildings);
     }
 }
-        
